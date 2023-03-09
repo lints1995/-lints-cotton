@@ -1,0 +1,35 @@
+{
+  "name": "@lints/cotton",
+  "version": "1.0.4",
+  "description": "tools methods",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx watch --no-cache src/index.ts",
+    "test": "npx tsx watch --no-cache test/index.ts",
+    "build": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lints1995/cotton.git"
+  },
+  "keywords": [
+    "ES Module",
+    "tools",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "author": "lints",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lints1995/cotton/issues"
+  },
+  "homepage": "https://github.com/lints1995/cotton#readme",
+  "devDependencies": {
+    "tsx": "^3.12.3",
+    "rollup-plugin-typescript2": "^0.34.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
