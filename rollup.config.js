@@ -8,5 +8,11 @@ export default {
     file: "dist/index.js",
     format: "es"
   },
-  plugins: [typescript(), commonjs(), terser()]
+  plugins: [
+    typescript({
+      useTsconfigDeclarationDir: true
+    }),
+    commonjs(),
+    terser()
+  ]
 };
