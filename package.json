@@ -1,9 +1,12 @@
 {
   "name": "@lints/cotton",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "tools methods",
   "main": "dist/index.js",
   "type": "module",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "dev": "npx tsx watch --no-cache src/index.ts",
     "test": "npx tsx watch --no-cache test/index.ts",
