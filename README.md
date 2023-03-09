@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-npm install @lints/cotton or yarn @lints/cotton
+npm install @lints/cotton or yarn add @lints/cotton
 ```
 
 ## 文档
