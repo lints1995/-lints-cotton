@@ -1,4 +1,6 @@
 import typescript from "rollup-plugin-typescript2";
+import { terser } from "rollup-plugin-terser";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default {
   input: "./src/index.ts",
@@ -6,7 +8,5 @@ export default {
     file: "dist/index.js",
     format: "es"
   },
-  plugins: [
-    typescript() // 会自动读取 文件tsconfig.json配置
-  ]
+  plugins: [typescript(), commonjs(), terser()]
 };

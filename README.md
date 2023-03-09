@@ -1,6 +1,6 @@
 ## 说明
 
-> 使用 rollup 打包的 ES Module 规范的工具方法库
+**使用 rollup 打包的 ES Module 规范的工具方法库**
 
 ## 安装
 
@@ -12,7 +12,7 @@ npm install @lints/cotton or yarn @lints/cotton
 
 ### getQueryParams
 
-> 获取 url 参数
+_获取 url 参数_
 
 ```ts
 getQueryParams("https://www.baidu.com?foo=123");
@@ -21,7 +21,7 @@ getQueryParams("https://www.baidu.com?foo=123");
 
 ### getAmountInWords
 
-> 金额转中文大写金额
+_金额转中文大写金额_
 
 ```ts
 getAmountInWords(20.5);
@@ -30,7 +30,7 @@ getAmountInWords(20.5);
 
 ### validatePhoneNum
 
-> 验证手机号码
+_验证手机号码_
 
 ```ts
 validatePhoneNum("122");
@@ -42,7 +42,7 @@ validatePhoneNum("13888888888");
 
 ### getDataType
 
-> 数据类型判断
+_数据类型判断_
 
 ```ts
 getDataType({});
@@ -54,7 +54,7 @@ getDataType("");
 
 ### throttle
 
-> 节流函数
+_节流函数_
 
 ```ts
 const throttleFn = throttle(foo(), 1000);
@@ -63,7 +63,7 @@ throttleFn();
 
 ### debounce
 
-> 防抖函数
+_防抖函数_
 
 ```ts
 const debounceFn = debounce(foo(), 1000);
