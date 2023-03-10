@@ -8,7 +8,7 @@
 npm install @lints/cotton or yarn add @lints/cotton
 ```
 
-<p style="font-size:14px">可以全部默认导入，也可以按需导入</p>
+可以全部默认导入，也可以按需导入
 
 ```ts
 import C, { validatePhoneNum } from "@lints/cotton";
@@ -30,7 +30,7 @@ console.log(validatePhoneNum("13888888888"));
 
 ### getQueryParams
 
-<p style="font-size:14px">获取 url 参数</p>
+获取 url 参数
 
 ```ts
 getQueryParams("https://www.baidu.com?foo=123");
@@ -39,7 +39,7 @@ getQueryParams("https://www.baidu.com?foo=123");
 
 ### getAmountInWords
 
-<p style="font-size:14px">金额转中文大写金额</p>
+金额转中文大写金额
 
 ```ts
 getAmountInWords(20.5);
@@ -48,7 +48,7 @@ getAmountInWords(20.5);
 
 ### validatePhoneNum
 
-<p style="font-size:14px">验证手机号码</p>
+验证手机号码
 
 ```ts
 validatePhoneNum("122");
@@ -60,7 +60,7 @@ validatePhoneNum("13888888888");
 
 ### getDataType
 
-<p style="font-size:14px">数据类型判断</p>
+数据类型判断
 
 ```ts
 getDataType({});
@@ -72,7 +72,7 @@ getDataType("");
 
 ### throttle
 
-<p style="font-size:14px">节流函数</p>
+节流函数
 
 ```ts
 const throttleFn = throttle(foo(), 1000);
@@ -81,7 +81,7 @@ throttleFn();
 
 ### debounce
 
-<p style="font-size:14px">防抖函数</p>
+防抖函数
 
 ```ts
 const debounceFn = debounce(foo(), 1000);
