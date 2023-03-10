@@ -4,6 +4,8 @@ import debounce from "./debounce";
 import throttle from "./throttle";
 import validatePhoneNum from "./validatePhoneNum";
 import getDataType from "./getDataType";
+import dateFormat from "./dateFormat";
+import getTimeStamp from "./getTimeStamp";
 
 export default {
   getQueryParams,
@@ -11,7 +13,9 @@ export default {
   validatePhoneNum,
   getDataType,
   debounce,
-  throttle
+  throttle,
+  dateFormat,
+  getTimeStamp
 };
 export {
   getQueryParams,
@@ -19,5 +23,7 @@ export {
   validatePhoneNum,
   getDataType,
   debounce,
-  throttle
+  throttle,
+  dateFormat,
+  getTimeStamp
 };

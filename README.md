@@ -37,6 +37,27 @@ getQueryParams("https://www.baidu.com?foo=123");
 // output: { foo: '123' }
 ```
 
+### dateFormat
+
+时间戳转 YYYY-MM-DD hh:mm:ss
+
+```ts
+dateFormat(1678434136000);
+// output: 2023-03-10 15:42:16
+
+dateFormat(1678434136000, "YYYY/MM/DD hh:mm:ss");
+// output: 2023/03/10 15:42:16
+```
+
+### getTimeStamp
+
+YYYY-MM-DD hh:mm:ss 转换成毫秒时间戳
+
+```ts
+getTimeStamp("2023-03-10 15:42:16");
+// output: 1678434136000
+```
+
 ### getAmountInWords
 
 金额转中文大写金额

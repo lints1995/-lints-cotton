@@ -4,6 +4,8 @@ import debounce from "./debounce";
 import throttle from "./throttle";
 import validatePhoneNum from "./validatePhoneNum";
 import getDataType from "./getDataType";
+import dateFormat from "./dateFormat";
+import getTimeStamp from "./getTimeStamp";
 declare const _default: {
     getQueryParams: (url: string) => {};
     getAmountInWords: (money: any) => string;
@@ -11,6 +13,8 @@ declare const _default: {
     getDataType: (data: any) => any;
     debounce: (fn: () => void, delay?: number) => () => void;
     throttle: (fn: () => void, delay?: number) => () => void;
+    dateFormat: (time: number, format?: string) => string | void;
+    getTimeStamp: (s?: string) => number;
 };
 export default _default;
-export { getQueryParams, getAmountInWords, validatePhoneNum, getDataType, debounce, throttle };
+export { getQueryParams, getAmountInWords, validatePhoneNum, getDataType, debounce, throttle, dateFormat, getTimeStamp };
