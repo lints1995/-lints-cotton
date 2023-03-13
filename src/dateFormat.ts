@@ -6,7 +6,6 @@
 
 const dateFormat = (time: number, format = "YYYY-MM-DD hh:mm:ss") => {
   try {
-    console.log(format.split(" "));
     if (!time) return "";
     const len: number = String(parseInt(String(time))).length;
     if (len != 10 && len != 13) return console.error("timestamp format error");

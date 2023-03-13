@@ -1,6 +1,7 @@
 import typescript from "rollup-plugin-typescript2";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
+import cleanup from "rollup-plugin-cleanup";
 
 export default {
   input: "./src/index.ts",
@@ -20,6 +21,7 @@ export default {
       useTsconfigDeclarationDir: true
     }),
     commonjs(),
-    terser()
+    terser(),
+    cleanup()
   ]
 };
