@@ -27,7 +27,7 @@ const dateFormat = (time: number, format = "YYYY-MM-DD hh:mm:ss") => {
     console.error("timestamp format error");
   }
 };
-const addZero = (num: number | string) => {
+const addZero = (num: number) => {
   // 不满10前面加0
   return num < 10 ? `0${num}` : num;
 };
