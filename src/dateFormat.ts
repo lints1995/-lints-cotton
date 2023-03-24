@@ -8,7 +8,7 @@ const dateFormat = (time: number, format = "YYYY-MM-DD hh:mm:ss") => {
   try {
     if (!time) return "";
     const len: number = String(parseInt(String(time))).length;
-    if (len != 10 && len != 13) return console.error("timestamp format error");
+    if (len != 10 && len != 13) throw "timestamp format error";
     time = len === 10 ? time * 1000 : time;
     const [front, after] = format.split(" ")
       ? format.split(" ")
@@ -24,7 +24,7 @@ const dateFormat = (time: number, format = "YYYY-MM-DD hh:mm:ss") => {
     const afterArr = after.split("");
     return `${Y}${frontArr[4]}${M}${frontArr[7]}${D} ${h}${afterArr[2]}${m}${afterArr[5]}${s}`;
   } catch (err) {
-    console.error("timestamp format error");
+    throw "timestamp format error";
   }
 };
 const addZero = (num: number) => {
