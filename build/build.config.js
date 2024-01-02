@@ -3,7 +3,6 @@ import { terser } from "rollup-plugin-terser";
 
 export default {
   input: "./src/index.ts",
-  external: ["test"],
   output: [
     {
       file: "dist/index.js",
