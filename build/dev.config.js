@@ -1,10 +1,21 @@
-import { baseConfig, basePlugins } from "./base.config";
+import { basePlugins } from "./base.config";
 import serve from "rollup-plugin-serve";
 import livereload from "rollup-plugin-livereload";
 
 export default {
   input: "./src/index.ts",
-  ...baseConfig,
+  output: [
+    {
+      file: "dist/index.js",
+      format: "es"
+    },
+    {
+      file: "dist/index.umd.js",
+      format: "umd",
+      exports: "named",
+      name: "$c",
+    }
+  ],
   plugins: [
     ...basePlugins,
     livereload({

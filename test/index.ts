@@ -1,3 +1,6 @@
+/**
+ * 测试环境入口文件
+ */
 import C from "../src/index";
 import FUNC_NAME from "../src/name";
 

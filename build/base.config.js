@@ -4,21 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import cleanup from "rollup-plugin-cleanup";
 import clear from "rollup-plugin-clear";
 
-export const baseConfig = {
-  output: [
-    {
-      file: "dist/index.js",
-      format: "es"
-    },
-    {
-      file: "dist/index.umd.js",
-      format: "umd",
-      exports: "named",
-      name: "$c"
-    }
-  ]
-};
-
+// 插件
 export const basePlugins = [
   typescript({
     useTsconfigDeclarationDir: true
