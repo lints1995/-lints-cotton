@@ -1,6 +1,6 @@
 /**
  * 校验手机号码
- * @param {string} phone
+ * @param {phone} string
  */
 const validatePhoneNum = (phone: string) => {
   if (!phone) return false;

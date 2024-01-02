@@ -12,7 +12,8 @@
         "removeComments": true, // 是否移除注释
         "paths": { // 指定模块的路径，和baseUrl有关联，和webpack中resolve.alias配置一样
             "src": [ //指定后可以在文件之直接 import * from 'src';
-                "./src"
+                "./src",
+                "./test"
             ]
         },
         "target": "ES2015", // 编译的目标是什么版本的
@@ -31,7 +32,8 @@
     },
     // 指定一个匹配列表（属于自动指定该路径下的所有ts相关文件）
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "test/**/*"
     ],
     // 指定一个排除列表（include的反向操作）
     "exclude": [

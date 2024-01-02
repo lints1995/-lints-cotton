@@ -3,7 +3,7 @@
  * @param money
  * @returns
  */
-const getAmountInWords = (money) => {
+const getAmountChineseNumeral = (money) => {
   if (!money) return "";
   let moneyArr = parseFloat(money).toFixed(2).split(".");
   money = moneyArr[0]
@@ -81,4 +81,4 @@ const getAmountInWords = (money) => {
   return resMoney;
 };
 
-export default getAmountInWords;
+export default getAmountChineseNumeral;

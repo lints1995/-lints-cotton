@@ -1,29 +1,32 @@
 import getQueryParams from "./getQueryParams";
-import getAmountInWords from "./getAmountInWords";
+import getAmountChineseNumeral from "./getAmountChineseNumeral";
 import debounce from "./debounce";
 import throttle from "./throttle";
 import validatePhoneNum from "./validatePhoneNum";
 import getDataType from "./getDataType";
 import dateFormat from "./dateFormat";
 import getTimeStamp from "./getTimeStamp";
+import equalNullObject from "./equalNullObject";
 
 export default {
   getQueryParams,
-  getAmountInWords,
+  getAmountChineseNumeral,
   validatePhoneNum,
   getDataType,
   debounce,
   throttle,
   dateFormat,
-  getTimeStamp
+  getTimeStamp,
+  equalNullObject
 };
 export {
   getQueryParams,
-  getAmountInWords,
+  getAmountChineseNumeral,
   validatePhoneNum,
   getDataType,
   debounce,
   throttle,
   dateFormat,
-  getTimeStamp
+  getTimeStamp,
+  equalNullObject
 };

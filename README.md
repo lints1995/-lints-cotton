@@ -34,7 +34,7 @@ console.log(validatePhoneNum("13888888888"));
 
 ```ts
 getQueryParams("https://www.baidu.com?foo=123");
-// output: { foo: '123' }
+// 输出: { foo: '123' }
 ```
 
 ### dateFormat
@@ -43,10 +43,10 @@ getQueryParams("https://www.baidu.com?foo=123");
 
 ```ts
 dateFormat(1678434136000);
-// output: 2023-03-10 15:42:16
+// 输出: 2023-03-10 15:42:16
 
 dateFormat(1678434136000, "YYYY/MM/DD hh:mm:ss");
-// output: 2023/03/10 15:42:16
+// 输出: 2023/03/10 15:42:16
 ```
 
 ### getTimeStamp
@@ -55,16 +55,16 @@ YYYY-MM-DD hh:mm:ss 转换成毫秒时间戳
 
 ```ts
 getTimeStamp("2023-03-10 15:42:16");
-// output: 1678434136000
+// 输出: 1678434136000
 ```
 
-### getAmountInWords
+### getAmountChineseNumeral
 
 金额转中文大写金额
 
 ```ts
-getAmountInWords(20.5);
-// output: 贰拾元伍角
+getAmountChineseNumeral(20.5);
+// 输出: 贰拾元伍角
 ```
 
 ### validatePhoneNum
@@ -73,10 +73,10 @@ getAmountInWords(20.5);
 
 ```ts
 validatePhoneNum("122");
-// output: false
+// 输出: false
 
 validatePhoneNum("13888888888");
-// output: true
+// 输出: true
 ```
 
 ### getDataType
@@ -85,10 +85,10 @@ validatePhoneNum("13888888888");
 
 ```ts
 getDataType({});
-// output: object
+// 输出: object
 
 getDataType("");
-// output: string
+// 输出: string
 ```
 
 ### throttle
@@ -107,4 +107,19 @@ throttleFn();
 ```ts
 const debounceFn = debounce(foo(), 1000);
 debounceFn();
+```
+
+### equalNullObject
+
+对象是否为空对象
+
+```ts
+equalNullObject({});
+// 输出: true
+
+equalNullObject({ foo: 1 });
+// 输出: false
+
+equalNullObject(123123);
+// 输出: 传入的数据类型必须是对象类型
 ```
