@@ -2,7 +2,7 @@
  * 深拷贝对象/数组
  */
 
-const clone = () => {
+const clone = function (): any {
   return 0;
 };
 

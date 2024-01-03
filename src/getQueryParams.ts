@@ -3,7 +3,7 @@
  * @param {string} url
  * @returns
  * */
-const getQueryParams = (url: string) => {
+const getQueryParams = (url: string): any => {
   if (!url) return null;
   const paramArr = url.slice(url.indexOf("?") + 1).split("&");
   const params = {};

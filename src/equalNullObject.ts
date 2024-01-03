@@ -6,7 +6,7 @@
 import FUNC_NAME from "./name";
 import getDataType from "./getDataType";
 
-const equalNullObject = function (obj: Object) {
+const equalNullObject = function (obj: Object): boolean {
   if (getDataType(obj) !== "object")
     throw `${FUNC_NAME.equalNullObject}: 传入的数据类型必须是对象类型`;
   return (

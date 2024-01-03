@@ -4,7 +4,10 @@
  * @returns
  */
 
-const dateFormat = (time: number, format = "YYYY-MM-DD hh:mm:ss") => {
+const dateFormat = function (
+  time: number,
+  format = "YYYY-MM-DD hh:mm:ss"
+): string {
   try {
     if (!time) return "";
     const len: number = String(parseInt(String(time))).length;

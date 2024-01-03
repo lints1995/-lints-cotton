@@ -1,7 +1,7 @@
 /**
  * 节流
  **/
-const throttle = (fn: () => void, delay?: number) => {
+const throttle = function (fn: () => void, delay?: number): () => void {
   let timer = null;
   return function () {
     if (timer) return;

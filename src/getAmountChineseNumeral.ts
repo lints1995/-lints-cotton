@@ -3,7 +3,7 @@
  * @param money
  * @returns
  */
-const getAmountChineseNumeral = (money) => {
+const getAmountChineseNumeral = function (money): string {
   if (!money) return "";
   let moneyArr = parseFloat(money).toFixed(2).split(".");
   money = moneyArr[0]

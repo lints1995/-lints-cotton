@@ -2,7 +2,7 @@
  * 防抖
  */
 
-const debounce = (fn: () => void, delay?: number) => {
+const debounce = function (fn: () => void, delay?: number): () => void {
   let timer = null;
   return function () {
     timer && clearTimeout(timer);
